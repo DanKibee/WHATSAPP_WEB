@@ -33,12 +33,12 @@ body {
 .icon:hover {
   background-color: #484848;
 }
-.grid {
+/* .grid {
   display: grid;
-  grid-template-columns: 387px 1fr;
+  grid-template-columns: 38% 62%;
   min-height: 100vh;
   position: fixed;
-}
+} */
 .header {
   margin-top: 34px;
   margin-left: 35px;
@@ -87,6 +87,7 @@ body {
 }
 .displaymess {
   display: flex;
+  width: calc(100%-390px);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -184,4 +185,10 @@ body {
 }
 #chatlist::-webkit-scrollbar {
   width: 10px;
+}
+.conversation {
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  padding: 10px;
 }

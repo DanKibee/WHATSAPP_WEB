@@ -1,100 +1,100 @@
 {
-"chats":[
-  {
-    "name": "Mwas",
-    "profilePic": "profile1.jpg",
-    "preview": "niki",
-    "timestamp": "19/02/2025",
-    "unread": true,
-    "read": false
-  },
-  {
-    "name": "Lewi",
-    "profilePic": ".png",
-    "preview": "Okay bet",
-    "timestamp": "19/02/2025",
-    "unread": false,
-    "read": true
-  },
-  {
-    "name": "Shawn",
-    "profilePic": "profile3.jpg",
-    "preview": "Alaa",
-    "timestamp": "19/02/2025",
-    "unread": false,
-    "read": true
-  },
-  {
-    "name": "Ngash",
-    "profilePic": "profile4.jpg",
-    "preview": "Zi",
-    "timestamp": "17/02/2025",
-    "unread": false,
-    "read": true
-  },
-  {
-    "name": "Hanson",
-    "profilePic": "profile5.jpg",
-    "preview": "Wazi",
-    "timestamp": "16/02/2025",
-    "unread": false,
-    "read": false
-  },
-  {
-    "name": "Mom",
-    "profilePic": "profile6.jpg",
-    "preview": "Thanks",
-    "timestamp": "14/02/2025",
-    "unread": false,
-    "read": true
-  },
-  {
-    "name": "Daniel",
-    "profilePic": "profile6.jpg",
-    "preview": "idk",
-    "timestamp": "03/05/25",
-    "unread": "false",
-    "read": "false"
-  },
-  {
-    "name": "Lincon K",
-    "profilePic": "profile7.jpg",
-    "preview": "Ata hii iko sawa",
-    "timestamp": "12/02/2025",
-    "unread": false,
-    "read": true
-  },
-  {
-    "name": "Ronnie",
-    "profilePic": "profile8.jpg",
-    "preview": "Wag1 G",
-    "timestamp": "11/02/2025",
-    "unread": true,
-    "read": false
-  },
-  {
-    "name": "Lincon",
-    "profilePic": "profile9.jpg",
-    "preview": "Nah",
-    "timestamp": "09/02/2025",
-    "unread": false,
-    "read": true
-  },
-  {
-    "name": "Lincon",
-    "profilePic": "profile9.jpg",
-    "preview": "Nah",
-    "timestamp": "09/02/2025",
-    "unread": false,
-    "read": true
-  },
-  {
-    "name": "Lincon",
-    "profilePic": "profile9.jpg",
-    "preview": "Nah",
-    "timestamp": "09/02/2025",
-    "unread": false,
-    "read": true
-  }
-]
+  "chats": [
+    {
+      "name": "Mwas",
+      "profilePic": "profile1.jpg",
+      "preview": "niki",
+      "timestamp": "19/02/2025",
+      "unread": true,
+      "read": false
+    },
+    {
+      "name": "Lewi",
+      "profilePic": ".png",
+      "preview": "Okay bet",
+      "timestamp": "19/02/2025",
+      "unread": false,
+      "read": true
+    },
+    {
+      "name": "Shawn",
+      "profilePic": "profile3.jpg",
+      "preview": "Alaa",
+      "timestamp": "19/02/2025",
+      "unread": false,
+      "read": true
+    },
+    {
+      "name": "Ngash",
+      "profilePic": "profile4.jpg",
+      "preview": "Zi",
+      "timestamp": "17/02/2025",
+      "unread": false,
+      "read": true
+    },
+    {
+      "name": "Hanson",
+      "profilePic": "profile5.jpg",
+      "preview": "Wazi",
+      "timestamp": "16/02/2025",
+      "unread": false,
+      "read": false
+    },
+    {
+      "name": "Mom",
+      "profilePic": "profile6.jpg",
+      "preview": "Thanks",
+      "timestamp": "14/02/2025",
+      "unread": false,
+      "read": true
+    },
+    {
+      "name": "Daniel",
+      "profilePic": "profile6.jpg",
+      "preview": "idk",
+      "timestamp": "03/05/25",
+      "unread": "false",
+      "read": "false"
+    },
+    {
+      "name": "Lincon K",
+      "profilePic": "profile7.jpg",
+      "preview": "Ata hii iko sawa",
+      "timestamp": "12/02/2025",
+      "unread": false,
+      "read": true
+    },
+    {
+      "name": "Ronnie",
+      "profilePic": "profile8.jpg",
+      "preview": "Wag1 G",
+      "timestamp": "11/02/2025",
+      "unread": true,
+      "read": false
+    },
+    {
+      "name": "Lincon",
+      "profilePic": "profile9.jpg",
+      "preview": "Nah",
+      "timestamp": "09/02/2025",
+      "unread": false,
+      "read": true
+    },
+    {
+      "name": "Lincon",
+      "profilePic": "profile9.jpg",
+      "preview": "Nah",
+      "timestamp": "09/02/2025",
+      "unread": false,
+      "read": true
+    },
+    {
+      "name": "Lincon",
+      "profilePic": "profile9.jpg",
+      "preview": "Nah",
+      "timestamp": "09/02/2025",
+      "unread": false,
+      "read": true
+    }
+  ]
 }
