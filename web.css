@@ -1,6 +1,12 @@
+.background{
+  height: 100vh;
+  display: flex;
+  height: 100vh
+
+}
 body {
   background-color: #212121;
-  height: 100vh;
+  /* height: 100vh */
 }
 #applogo {
   position: fixed;
@@ -42,12 +48,12 @@ body {
 .header {
   margin-top: 34px;
   margin-left: 35px;
-  width: 350px;
+  width: 28%;
   background-color: #323232;
-  height: 100vh;
+  /* height: 100vh; */
   border-radius: 1rem;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .chat-header {
   margin-bottom: 0px;
@@ -87,7 +93,7 @@ body {
 }
 .displaymess {
   display: flex;
-  width: calc(100%-390px);
+  width: 72%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
