@@ -6,7 +6,12 @@
       "preview": "niki",
       "timestamp": "19/02/2025",
       "unread": true,
-      "read": false
+      "read": false,
+      "messages": [
+        { "text": "niki", "type": "received" },
+        { "text": "Hey, how are you?", "type": "sent" },
+        { "text": "I'm good, thanks!", "type": "received" }
+      ]
     },
     {
       "name": "Lewi",
@@ -14,7 +19,12 @@
       "preview": "Okay bet",
       "timestamp": "19/02/2025",
       "unread": false,
-      "read": true
+      "read": true,
+      "messages": [
+        { "text": "Okay bet", "type": "received" },
+        { "text": "Cool, see you later!", "type": "sent" },
+        { "text": "Take care!", "type": "received" }
+      ]
     },
     {
       "name": "Shawn",
@@ -22,7 +32,12 @@
       "preview": "Alaa",
       "timestamp": "19/02/2025",
       "unread": false,
-      "read": true
+      "read": true,
+      "messages": [
+        { "text": "Alaa", "type": "received" },
+        { "text": "Nice one!", "type": "sent" },
+        { "text": "Thanks, bro!", "type": "received" }
+      ]
     },
     {
       "name": "Ngash",
@@ -30,7 +45,12 @@
       "preview": "Zi",
       "timestamp": "17/02/2025",
       "unread": false,
-      "read": true
+      "read": true,
+      "messages": [
+        { "text": "Zi", "type": "received" },
+        { "text": "Got it!", "type": "sent" },
+        { "text": "Cool, let’s proceed!", "type": "received" }
+      ]
     },
     {
       "name": "Hanson",
@@ -38,7 +58,12 @@
       "preview": "Wazi",
       "timestamp": "16/02/2025",
       "unread": false,
-      "read": false
+      "read": false,
+      "messages": [
+        { "text": "Wazi", "type": "received" },
+        { "text": "Thanks!", "type": "sent" },
+        { "text": "You’re welcome!", "type": "received" }
+      ]
     },
     {
       "name": "Mom",
@@ -46,7 +71,12 @@
       "preview": "Thanks",
       "timestamp": "14/02/2025",
       "unread": false,
-      "read": true
+      "read": true,
+      "messages": [
+        { "text": "Thanks", "type": "received" },
+        { "text": "You’re welcome!", "type": "sent" },
+        { "text": "Love you!", "type": "received" }
+      ]
     },
     {
       "name": "Daniel",
@@ -54,7 +84,12 @@
       "preview": "idk",
       "timestamp": "03/05/25",
       "unread": "false",
-      "read": "false"
+      "read": "false",
+      "messages": [
+        { "text": "idk", "type": "received" },
+        { "text": "Let me check!", "type": "sent" },
+        { "text": "Found it!", "type": "received" }
+      ]
     },
     {
       "name": "Lincon K",
@@ -62,7 +97,12 @@
       "preview": "Ata hii iko sawa",
       "timestamp": "12/02/2025",
       "unread": false,
-      "read": true
+      "read": true,
+      "messages": [
+        { "text": "Ata hii iko sawa", "type": "received" },
+        { "text": "Yes, it’s good!", "type": "sent" },
+        { "text": "Perfect!", "type": "received" }
+      ]
     },
     {
       "name": "Ronnie",
@@ -70,7 +110,12 @@
       "preview": "Wag1 G",
       "timestamp": "11/02/2025",
       "unread": true,
-      "read": false
+      "read": false,
+      "messages": [
+        { "text": "Wag1 G", "type": "received" },
+        { "text": "What’s good?", "type": "sent" },
+        { "text": "All good here!", "type": "received" }
+      ]
     },
     {
       "name": "Lincon",
@@ -78,7 +123,12 @@
       "preview": "Nah",
       "timestamp": "09/02/2025",
       "unread": false,
-      "read": true
+      "read": true,
+      "messages": [
+        { "text": "Nah", "type": "received" },
+        { "text": "Okay, no worries!", "type": "sent" },
+        { "text": "Catch you later!", "type": "received" }
+      ]
     },
     {
       "name": "Lincon",
@@ -86,7 +136,12 @@
       "preview": "Nah",
       "timestamp": "09/02/2025",
       "unread": false,
-      "read": true
+      "read": true,
+      "messages": [
+        { "text": "Nah", "type": "received" },
+        { "text": "Okay, no worries!", "type": "sent" },
+        { "text": "Catch you later!", "type": "received" }
+      ]
     },
     {
       "name": "Lincon",
@@ -94,7 +149,12 @@
       "preview": "Nah",
       "timestamp": "09/02/2025",
       "unread": false,
-      "read": true
+      "read": true,
+      "messages": [
+        { "text": "Nah", "type": "received" },
+        { "text": "Okay, no worries!", "type": "sent" },
+        { "text": "Catch you later!", "type": "received" }
+      ]
     }
   ]
 }

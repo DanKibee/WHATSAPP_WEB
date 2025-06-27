@@ -87,3 +87,54 @@ let searchChats = () => {
   });
 };
 searchChats();
+// handling the chat item click event
+document.querySelectorAll("chatItem").forEach((item) => { 
+  item.addEventListener("click", function () { 
+    // removing active classes from the chatItem
+    document.querySelectorAll("chatItem").forEach(i => { 
+      i.classList.remove("active");
+      // adding active class to the clicked chatItem
+      item.classList.add("active");
+      // get the chat name
+      const chatname = item.getAttribute("chat_name");
+      // get the chat
+      const chat = chatsData.find(chat => chat.name === chatname);
+      // update chat header
+      document.getElementsById("headerProfile").src = chat.profilePic;
+      document.getElementsByClassName(chat_name).textContent = chat.name;
+      // update the conversation body
+      const conversationBody = document.getElementById("chatbody");
+      conversationBody.innerHTML = "";
+      chat.messages.forEach(message => { 
+        const messageDiv= document.createElement("div");
+        messageDiv.classList.add("message", message.type);
+        messageDiv.textContent = message.text;
+        conversationBody.appendChild(messageDiv);
+      })
+      // scroll to the bottom of the conversation body
+      conversationBody.scrollTop = conversationBody.scrollHeight;
+
+    })
+  })
+})
+// send message function
+const sendMessage = () => {
+  const input = document.getElementsByClassName("footerInput");
+  const messageText = input.value.trim()
+  if (!messageText) { return }
+  // find active chat
+  const activeChatItem = document.querySelector(".chatItem.active");
+  if (!activeChatItem) { return }
+  // get chat name
+  const chatname = activeChatItem.getAttribute("chat_name");
+  const chat = chatsData.chats.find(c => c.name === chatname);
+  chat.messages.push({ text: messageText, type: "sent" });
+
+  const ConversationBody = document.getElementById("conversationBody");
+  messageDiv.classList.add("message", "sent");
+  messageDiv.textContent = messageText;
+  conversationBody.appendChild(messageDiv);
+  conversationBody.scrollTop = conversationBody.scrollHeight;
+  input.value = "";
+
+ }
