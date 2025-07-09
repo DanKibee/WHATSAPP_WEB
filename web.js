@@ -1,8 +1,10 @@
 let chatsData = [];
+let jsonData;
 const chatList = document.getElementById("chatlist");
 fetch("chats.json")
   .then((response) => response.json())
   .then((data) => {
+    jsonData = data;
     chatsData = data.chats;
     createChatList(chatsData);
   })
@@ -14,7 +16,7 @@ let createChatList = (chatsData) => {
   chatList.innerHTML = "";
   chatsData.forEach((chat) => {
     const chatItem = document.createElement("div");
-    chatItem.className = "chat-item";
+    chatItem.id = "chat-item";
     //creating a profile picture
     const profilePic = document.createElement("img");
     profilePic.className = "profile-pic";
@@ -65,8 +67,9 @@ let createChatList = (chatsData) => {
     chatList.appendChild(chatItem);
   });
 };
+
 document.addEventListener("DOMContentLoaded", () => {
-  createChatList(chats);
+  createChatList(chatsData);
 });
 
 let searchChats = () => {
@@ -86,55 +89,67 @@ let searchChats = () => {
     createChatList(filteredChats);
   });
 };
-searchChats();
-// handling the chat item click event
-document.querySelectorAll("chatItem").forEach((item) => { 
-  item.addEventListener("click", function () { 
-    // removing active classes from the chatItem
-    document.querySelectorAll("chatItem").forEach(i => { 
-      i.classList.remove("active");
-      // adding active class to the clicked chatItem
-      item.classList.add("active");
-      // get the chat name
-      const chatname = item.getAttribute("chat_name");
-      // get the chat
-      const chat = chatsData.find(chat => chat.name === chatname);
-      // update chat header
-      document.getElementsById("headerProfile").src = chat.profilePic;
-      document.getElementsByClassName(chat_name).textContent = chat.name;
-      // update the conversation body
-      const conversationBody = document.getElementById("chatbody");
-      conversationBody.innerHTML = "";
-      chat.messages.forEach(message => { 
-        const messageDiv= document.createElement("div");
-        messageDiv.classList.add("message", message.type);
-        messageDiv.textContent = message.text;
-        conversationBody.appendChild(messageDiv);
-      })
-      // scroll to the bottom of the conversation body
-      conversationBody.scrollTop = conversationBody.scrollHeight;
 
-    })
-  })
+document.addEventListener("DOMContentLoaded", () => {
+  // searchChats();
+  // Function to handle chat item click
+  const chatItems = document.getElementById("chatlist").getElementsByClassName("chatItem");
+  console.log(chatItems);
+  const items = Array.from(chatItems);
+  console.log(items);
+  for (let i of items) {
+    // const item = items[i];
+    console.log(i);
+
+    // item.addEventListener("click", () => {
+    //   console.log("Hello world");
+    //   // Remove active class from all chat items
+    //   chatItems.forEach((i) => i.classList.remove("active"));
+    //   // Add active class to the clicked chat item
+    //   item.classList.add("active");
+    //   // Get chat name from the clicked item
+    //   const chatName = item.getAttribute("chat_name").textContent;
+    //   // Find the corresponding chat data
+    //   const chatData = chatList.find((chat) => chat.name === chatName);
+    //   // Update chat header
+    //   document.getElementById("headerProfile").src = chat.profilePic;
+    //   document.querySelector(".chat_name").textContent = chat.name; // Assuming one element with class 'chat_name'
+    //   // Update the conversation body
+    //   const conversationBody = document.getElementById("chatbody");
+    //   conversationBody.innerHTML = "";
+    //   chat.messages.forEach((message) => {
+    //     const messageDiv = document.createElement("div");
+    //     messageDiv.classList.add("message", message.type);
+    //     messageDiv.textContent = message.text;
+    //     conversationBody.appendChild(messageDiv);
+    //   });
+    //   // Scroll to the bottom of the conversation body
+    //   conversationBody.scrollTop = conversationBody.scrollHeight;
+    // });
+  };
 })
 // send message function
 const sendMessage = () => {
   const input = document.getElementsByClassName("footerInput");
-  const messageText = input.value.trim()
-  if (!messageText) { return }
+  const messageText = input.value.trim();
+  if (!messageText) {
+    return;
+  }
   // find active chat
   const activeChatItem = document.querySelector(".chatItem.active");
-  if (!activeChatItem) { return }
+  if (!activeChatItem) {
+    return;
+  }
   // get chat name
   const chatname = activeChatItem.getAttribute("chat_name");
-  const chat = chatsData.chats.find(c => c.name === chatname);
+
+  const chat = jsonData.chats.find((c) => c.name === chatname);
   chat.messages.push({ text: messageText, type: "sent" });
 
   const ConversationBody = document.getElementById("conversationBody");
   messageDiv.classList.add("message", "sent");
   messageDiv.textContent = messageText;
-  conversationBody.appendChild(messageDiv);
-  conversationBody.scrollTop = conversationBody.scrollHeight;
+  ConversationBody.appendChild(messageDiv);
+  ConversationBody.scrollTop = ConversationBody.scrollHeight;
   input.value = "";
-
- }
+};

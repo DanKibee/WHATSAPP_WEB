@@ -119,6 +119,7 @@ body {
   margin-top: 20px;
 }
 .about {
+  display: none;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -218,6 +219,9 @@ body {
   overflow-y: auto;
 }
 .chatFooter {
+  position: absolute;
+  bottom: 0%;
+  width: 66%;
   padding: 10px;
   background: #f0f0f0;
   display: flex;
